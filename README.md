@@ -7,6 +7,7 @@ Customers can search and order products.
 ## Setup
 - Java: 11.0.5
 - Intellij IDEA: 2018.3.3 x64
+- PostgreSQL: 12
 
 ## How to run
 

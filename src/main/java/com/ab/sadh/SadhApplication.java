@@ -7,7 +7,5 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SadhApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SadhApplication.class, args);
-	}
-
+		SpringApplication.run(SadhApplication.class, args); }
 }
