@@ -12,3 +12,4 @@ public interface MissionService {
 
     List<Mission> getAllMissions();
 }
+

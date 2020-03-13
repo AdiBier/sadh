@@ -87,6 +87,24 @@
 			<artifactId>hibernate-spatial</artifactId>
 			<version>5.4.12.Final</version>
 		</dependency>
+<<<<<<< HEAD
+
+		<!-- Testy -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Beans -->
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.4</version>
+		</dependency>
+=======
+>>>>>>> c4b6c9a2f9b76a194a3e0f08791818bb414f9e09
 	</dependencies>
 
 	<build>
