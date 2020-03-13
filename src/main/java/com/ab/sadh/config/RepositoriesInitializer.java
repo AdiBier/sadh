@@ -1,6 +1,5 @@
 package com.ab.sadh.config;
 
-import com.ab.sadh.model.ImagesTypes;
 import com.ab.sadh.model.Mission;
 import com.ab.sadh.model.Product;
 import com.ab.sadh.model.Users;
@@ -32,7 +31,7 @@ public class RepositoriesInitializer {
     private MissionsRepository missionsRepository;
 
     @Bean
-    InitializingBean initializingBean() {
+    InitializingBean initializingBean() { // TODO sprawdzić
         return () -> {
             if (usersRepository.findAll().isEmpty() == true) {
                 try {

@@ -4,18 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-<<<<<<< HEAD
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.sql.Timestamp;
 import java.util.List;
-=======
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.validation.constraints.NotEmpty;
-import java.sql.Timestamp;
->>>>>>> c4b6c9a2f9b76a194a3e0f08791818bb414f9e09
 
 @Entity
 @AllArgsConstructor
@@ -24,7 +20,6 @@ import java.sql.Timestamp;
 public class Mission {
 
     @Id
-<<<<<<< HEAD
     @Column(name = "Name", nullable = false, unique = true, length = 32)
     private String name;
 
@@ -45,16 +40,4 @@ public class Mission {
     @JoinColumn(name = "UserId")
     private Users user;
 
-=======
-    @Column(nullable = false, unique = true, length = 32)
-    private String name;
-
-    @NotEmpty
-    private String imageType;
-
-    private Timestamp startDate;
-
-    private Timestamp finishDate;
-
->>>>>>> c4b6c9a2f9b76a194a3e0f08791818bb414f9e09
 }
