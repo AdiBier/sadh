@@ -11,12 +11,18 @@ import java.sql.Timestamp;
 
 @Entity
 @Data
+<<<<<<< HEAD
 @NoArgsConstructor
 @AllArgsConstructor
+=======
+@AllArgsConstructor
+@NoArgsConstructor
+>>>>>>> c4b6c9a2f9b76a194a3e0f08791818bb414f9e09
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+<<<<<<< HEAD
     @Column(name = "ProductId", updatable = false, nullable = false, unique = true)
     private Long productId;
 
@@ -42,4 +48,19 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "UserId")
     private Users user;
+=======
+    @Column(updatable = false, nullable = false, unique = true)
+    private Long productId;
+
+    @NotEmpty
+    private Timestamp productAcquisitionDate;
+
+    @NotEmpty
+    private Point coords;
+
+    @NotEmpty
+    private Double price;
+
+    private String productUrl;
+>>>>>>> c4b6c9a2f9b76a194a3e0f08791818bb414f9e09
 }
