@@ -87,7 +87,6 @@
 			<artifactId>hibernate-spatial</artifactId>
 			<version>5.4.12.Final</version>
 		</dependency>
-<<<<<<< HEAD
 
 		<!-- Testy -->
 		<dependency>
@@ -103,8 +102,6 @@
 			<artifactId>commons-beanutils</artifactId>
 			<version>1.9.4</version>
 		</dependency>
-=======
->>>>>>> c4b6c9a2f9b76a194a3e0f08791818bb414f9e09
 	</dependencies>
 
 	<build>
