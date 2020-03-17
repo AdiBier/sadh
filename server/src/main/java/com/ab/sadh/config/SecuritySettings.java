@@ -24,7 +24,6 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 public class SecuritySettings extends WebSecurityConfigurerAdapter {
 
     @Bean
-//    @Profile(ProfileNames.INMEMORY) //TODO możliwe by skasować 3 miejscach te rzeczy
     public UserDetailsService userDetailsService() {
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
         User.UserBuilder userBuilder = User.withDefaultPasswordEncoder();

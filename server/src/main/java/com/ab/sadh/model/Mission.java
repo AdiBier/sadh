@@ -17,6 +17,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Table(name = "Missions", uniqueConstraints = @UniqueConstraint(columnNames = {"Name"}))
 public class Mission {
 
     @Id

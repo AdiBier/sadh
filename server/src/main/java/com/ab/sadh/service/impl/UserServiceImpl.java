@@ -4,6 +4,7 @@ import com.ab.sadh.handler.UserSignUpDTO;
 import com.ab.sadh.model.Users;
 import com.ab.sadh.repository.UsersRepository;
 import com.ab.sadh.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -18,6 +19,7 @@ public class UserServiceImpl implements UserService {
     @Lazy
     private final PasswordEncoder passwordEncoder;
 
+    @Autowired
     public UserServiceImpl(UsersRepository usersRepository, PasswordEncoder passwordEncoder) {
         this.usersRepository = usersRepository;
         this.passwordEncoder = passwordEncoder;

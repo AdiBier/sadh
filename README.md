@@ -9,14 +9,3 @@ Customers can search and order products.
 - Intellij IDEA: 2018.3.3 x64
 - PostgreSQL: 12
 ## How to run
-
-
-
-## Example User
-1. login: admin password: admin
-2. login: user password: user
-
-## Functional requirements
-
-
-## Non-Functional requirements

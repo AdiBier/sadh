@@ -12,12 +12,11 @@ import java.sql.Timestamp;
 @Entity
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
+@Table(name = "Products")
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     @Column(name = "ProductId", updatable = false, nullable = false, unique = true)
     private Long productId;
 
@@ -31,7 +30,7 @@ public class Product {
 
     @NotEmpty
     @Column(name = "Price")
-    private Double price;
+    private Integer price;
 
     @Column(name = "ProductUrl")
     private String productUrl;

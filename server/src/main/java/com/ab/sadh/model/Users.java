@@ -1,6 +1,5 @@
 package com.ab.sadh.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,8 +10,8 @@ import java.util.List;
 
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "Users", uniqueConstraints = @UniqueConstraint(columnNames = {"Email", "Phone"}))
 public class Users implements Serializable {
 
     @Id
@@ -20,19 +19,19 @@ public class Users implements Serializable {
     @Column(updatable = false, nullable = false, unique = true)
     private Long userId;
 
-    @Column(name = "Email", nullable = false, unique = true, length = 64)
-    private String email;
-
     @Column(name = "Name", length = 32)
     private String name;
 
     @Column(name = "Surname", length = 32)
     private String surname;
 
+    @Column(name = "Email", nullable = false, unique = true, length = 64)
+    private String email;
+
     @Column(name = "Password", nullable = false)
     private String password;
 
-    @Column(name = "Phone", length = 20)
+    @Column(name = "Phone", length = 16)
     private String phone;
 
     @NotEmpty
